@@ -1,4 +1,4 @@
-// bao.cpp : Defines the entry point for the console application.
+ï»¿// bao.cpp : Defines the entry point for the console application.
 //
 
 #include "stdafx.h"
@@ -11,17 +11,16 @@
 int
 main(int argc, const char * argv[]) {
 #if _WIN32
-    // Èç¹ûÄãµÄÎÄ¼şÊÇ gbk gb18010£¬Ôò±àÂëÊÇ 936
-    // Èç¹ûÄãµÄÎÄ¼şÊÇ utf-8 (without bom)£¬Ôò±àÂëÊÇ 65001
-    SetConsoleOutputCP(936);
-    // SetConsoleOutputCP(65001);
+    // å¦‚æœä½ çš„æ–‡ä»¶æ˜¯ gbk gb18010ï¼Œåˆ™ç¼–ç æ˜¯ 936
+    // å¦‚æœä½ çš„æ–‡ä»¶æ˜¯ utf-8ï¼Œåˆ™ç¼–ç æ˜¯ 65001
+    // SetConsoleOutputCP(936);
+    SetConsoleOutputCP(65001);
 #endif
     int n = 10;
     int a[n];
     a[1] = 1;
     
-    printf("±ä³¤Êı×é %d\n", a[1]);
+    printf("å˜é•¿æ•°ç»„ %d\n", a[1]);
 
     return 0;
 }
-
